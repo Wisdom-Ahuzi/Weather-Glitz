@@ -1,13 +1,230 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  padding: 0px;
+  margin: 0px;
+  transition: all .3s ease-in;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.initial {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../Design/sunny.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.first {
+  width: 70%;
+  height: 100%;
+  /* background-color: slategray; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-first {
+  /* background-color:saddlebrown; */
+  height: 80%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inner-first>.basic {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner-first>.basic>.degree>p {
+  font-size: 4.5rem;
+  color: white;
+}
+
+.inner-first>.basic>.location {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner-first>.basic>.location>p:nth-child(1) {
+  font-size: 2rem;
+  color: white;
+}
+
+.inner-first>.basic>.location>p:nth-child(2) {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.inner-first>.basic>.condition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-first>.basic>.condition>.icon {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-first>.basic>.condition>.icon>svg {
+  width: 70%;
+  margin-top: -25px;
+}
+
+.inner-first>.basic>.condition>.icon>svg>path {
+  fill: white;
+}
+
+.inner-first>.basic>.condition>p {
+  font-size: 15px;
+  color: white;
+  margin-top: -40px;
+}
+
+/* Second */
+
+.second {
+  width: 40%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-second {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  /* background-color: slategray; */
+  margin-top: 20%;
+}
+
+.one {
+  width: 100%;
+  /* background-color: saddlebrown; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+.one input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 35px;
+  color: white;
+}
+
+.one input::placeholder {
+  color: white;
+}
+
+.one .search {
+  background-color: white;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+
+.one .search:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.one>.search>svg {
+  width: 20px;
+  height: 20px;
+}
+
+.two {
+  /* background-color: salmon; */
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid white;
+}
+
+.inner-two {
+  height: 100%;
+  height: 80%;
+  /* background-color: burlywood; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.inner-two>p {
+  color: white;
+  cursor: pointer;
+}
+
+.three {
+  /* background-color: silver; */
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
+}
+
+.three>p {
+  font-size: 17px;
+  color: white;
+  font-weight: 700;
+}
+
+.inner-three {
+  /* background-color: seagreen; */
+  height: 65%;
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inner-three>div {
+  /* background-color: sienna; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inner-three>div>span {
+  color: white;
 }
