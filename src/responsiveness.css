@@ -25,12 +25,11 @@
     }
 
     .inner-first>.basic>.condition>.icon>svg {
-        margin-top: -30px;
+        width: 100%;
     }
 
     .inner-first>.basic>.condition>p {
         font-size: 14px;
-        margin-top: -45px;
     }
 
     .one .search {
@@ -66,13 +65,8 @@
         font-size: 13px;
     }
 
-    .inner-first>.basic>.condition>.icon>svg {
-        margin-top: -40px;
-    }
-
     .inner-first>.basic>.condition>p {
         font-size: 14px;
-        margin-top: -55px;
     }
 
     .one .search {
@@ -126,11 +120,6 @@
 
     .inner-first>.basic>.condition>.icon>svg {
         width: 100%;
-        margin-top: -35px;
-    }
-
-    .inner-first>.basic>.condition>p {
-        margin-top: -50px;
     }
 
     /* Second */
@@ -200,11 +189,6 @@
 
     .inner-first>.basic>.condition>.icon>svg {
         width: 100%;
-        margin-top: -47px;
-    }
-
-    .inner-first>.basic>.condition>p {
-        margin-top: -65px;
     }
 
     .second {

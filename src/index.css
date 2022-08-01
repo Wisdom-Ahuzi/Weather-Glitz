@@ -4,6 +4,101 @@
   transition: all .3s ease-in;
 }
 
+#clear-day{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/clear-dar.jpg);
+}
+
+#rainy-day{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/rainy-day.jpg);
+}
+
+#snowy-day{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/snow-day-2.jpg);
+}
+
+#sunny-night{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/sunny-night.jpg);
+}
+
+#snowy-night{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/snowy-night.jpg);
+}
+
+#overcast-night{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/overcast-night.jpg);
+}
+
+#mist-night{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/mist-night.jpg);
+}
+
+#cloudy-night{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/cloudy-night.jpg);
+}
+
+#stormy-2{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Design/stormy.jpg);
+}
+
+/* Good enough */
+#cloudy{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/cloudy.jpg) !important;
+}
+
+#day{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/day.jpg) !important;
+}
+
+#mist{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/mist.jpg) !important;
+}
+
+/* Good enough */
+#night{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/night.jpg) !important;
+}
+
+/* Good enough */
+#overcast{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/overcast.jpg) !important;
+}
+
+#rainy{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/rainy.jpg) !important;
+}
+
+/* #snowfall{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/snowfall.jpg) !important;
+} */
+
+/* Good enough */
+#stormy{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/stormy.jpg) !important;
+}
+
+/* Good enough */
+#sunny{
+  transition: all 2.5s ease-in-out;
+  background-image: url(../Images/sunny.jpg) !important;
+}
+
 .initial {
   width: 100%;
   height: 100vh;
@@ -46,11 +141,11 @@
 }
 
 .inner-first>.basic {
-  width: 80%;
+  width: 85%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  gap: 5%;
 }
 
 .inner-first>.basic>.degree>p {
@@ -62,6 +157,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .inner-first>.basic>.location>p:nth-child(1) {
@@ -79,17 +175,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 .inner-first>.basic>.condition>.icon {
-  height: 80px;
+  height: 60%;
   display: flex;
   justify-content: center;
 }
 
 .inner-first>.basic>.condition>.icon>svg {
-  width: 70%;
-  margin-top: -25px;
+  width: 100%;
 }
 
 .inner-first>.basic>.condition>.icon>svg>path {
@@ -99,7 +196,8 @@
 .inner-first>.basic>.condition>p {
   font-size: 15px;
   color: white;
-  margin-top: -40px;
+  height: 40%;
+  text-align: center;
 }
 
 /* Second */
@@ -156,7 +254,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all .3s ease-in;
+  transition: all .3s ease-in-out;
 }
 
 .one .search:hover {
@@ -165,7 +263,6 @@
   backdrop-filter: blur(16.5px);
   -webkit-backdrop-filter: blur(16.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-
 }
 
 .one>.search>svg {
