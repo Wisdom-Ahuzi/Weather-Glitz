@@ -6,42 +6,42 @@
 
 #clear-day{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/clear-dar.jpg);
+  background-image: url(./Images/clear-dar.jpg);
 }
 
 #rainy-day{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/rainy-day.jpg);
+  background-image: url(./Images/rainy-day.jpg);
 }
 
 #snowy-day{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/snow-day-2.jpg);
+  background-image: url(./Images/snow-day-2.jpg);
 }
 
 #sunny-night{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/sunny-night.jpg);
+  background-image: url(./Images/sunny-night.jpg);
 }
 
 #snowy-night{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/snowy-night.jpg);
+  background-image: url(./Images/snowy-night.jpg);
 }
 
 #overcast-night{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/overcast-night.jpg);
+  background-image: url(./Images/overcast-night.jpg);
 }
 
 #mist-night{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/mist-night.jpg);
+  background-image: url(./Images/mist-night.jpg);
 }
 
 #cloudy-night{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/cloudy-night.jpg);
+  background-image: url(./Images/cloudy-night.jpg);
 }
 
 #stormy-2{
@@ -52,51 +52,51 @@
 /* Good enough */
 #cloudy{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/cloudy.jpg) !important;
+  background-image: url(./Images/cloudy.jpg) !important;
 }
 
 #day{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/day.jpg) !important;
+  background-image: url(./Images/day.jpg) !important;
 }
 
 #mist{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/mist.jpg) !important;
+  background-image: url(./Images/mist.jpg) !important;
 }
 
 /* Good enough */
 #night{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/night.jpg) !important;
+  background-image: url(./Images/night.jpg) !important;
 }
 
 /* Good enough */
 #overcast{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/overcast.jpg) !important;
+  background-image: url(./Images/overcast.jpg) !important;
 }
 
 #rainy{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/rainy.jpg) !important;
+  background-image: url(./Images/rainy.jpg) !important;
 }
 
 /* #snowfall{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/snowfall.jpg) !important;
+  background-image: url(./Images/snowfall.jpg) !important;
 } */
 
 /* Good enough */
 #stormy{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/stormy.jpg) !important;
+  background-image: url(./Images/stormy.jpg) !important;
 }
 
 /* Good enough */
 #sunny{
   transition: all 2.5s ease-in-out;
-  background-image: url(../Images/sunny.jpg) !important;
+  background-image: url(./Images/sunny.jpg) !important;
 }
 
 .initial {
