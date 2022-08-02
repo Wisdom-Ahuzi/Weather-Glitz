@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 const Main = () => {
 
 
-    const[meridian, setMeridian] = useState('am');
+
 
     const [main, setMain] = useState({
         style: 'main',
@@ -83,7 +83,6 @@ const Main = () => {
 
 
             if (data.current.is_day === 1) {
-                // setMeridian('am');
                 if (data.current.condition.text.includes('unny')) {
                     setMain(main => {
                         return { ...main, background: 'sunny' }
@@ -108,7 +107,7 @@ const Main = () => {
                     setMain(main => {
                         return { ...main, background: 'stormy-2' }
                     });
-                }else if (data.current.condition.text.includes('Mist')) {
+                }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
                     setMain(main => {
                         return { ...main, background: 'mist' }
                     });
@@ -119,7 +118,6 @@ const Main = () => {
                 }
                 
             }else{
-                // setMeridian('pm');
                 if (data.current.condition.text.includes('unny')) {
                     setMain(main => {
                         return { ...main, background: 'sunny-night' }
@@ -144,7 +142,7 @@ const Main = () => {
                     setMain(main => {
                         return { ...main, background: 'stormy' }
                     });
-                }else if (data.current.condition.text.includes('Mist')) {
+                }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
                     setMain(main => {
                         return { ...main, background: 'mist-night' }
                     });
@@ -226,7 +224,7 @@ const Main = () => {
                     setMain(main => {
                         return { ...main, background: 'stormy-2' }
                     });
-                }else if (data.current.condition.text.includes('Mist')) {
+                }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
                     setMain(main => {
                         return { ...main, background: 'mist' }
                     });
@@ -261,7 +259,7 @@ const Main = () => {
                     setMain(main => {
                         return { ...main, background: 'stormy' }
                     });
-                }else if (data.current.condition.text.includes('Mist')) {
+                }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
                     setMain(main => {
                         return { ...main, background: 'mist-night' }
                     });
@@ -330,7 +328,6 @@ const Main = () => {
     
     
                 if (data.current.is_day === 1) {
-                    // setMeridian('am');
                     if (data.current.condition.text.includes('unny')) {
                         setMain(main => {
                             return { ...main, background: 'sunny' }
@@ -355,7 +352,7 @@ const Main = () => {
                         setMain(main => {
                             return { ...main, background: 'stormy-2' }
                         });
-                    }else if (data.current.condition.text.includes('Mist')) {
+                    }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
                         setMain(main => {
                             return { ...main, background: 'mist' }
                         });
@@ -366,7 +363,6 @@ const Main = () => {
                     }
                     
                 }else{
-                    // setMeridian('pm');
                     if (data.current.condition.text.includes('unny')) {
                         setMain(main => {
                             return { ...main, background: 'sunny-night' }
@@ -391,7 +387,7 @@ const Main = () => {
                         setMain(main => {
                             return { ...main, background: 'stormy' }
                         });
-                    }else if (data.current.condition.text.includes('Mist')) {
+                    }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
                         setMain(main => {
                             return { ...main, background: 'mist-night' }
                         });

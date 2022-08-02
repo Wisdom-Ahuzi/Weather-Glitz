@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Nunito+Sans:wght@900&family=Open+Sans:wght@300&family=Overpass:wght@100;400&family=Poppins:ital,wght@0,200;0,300;1,300&family=Raleway:ital,wght@0,600;1,100&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Space+Mono&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
   transition: all .3s ease-in-out;
+  font-family: 'Manrope', sans-serif;
 }
 
 #clear-day{
