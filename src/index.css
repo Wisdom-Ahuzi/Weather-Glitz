@@ -7,6 +7,33 @@
   font-family: 'Manrope', sans-serif;
 }
 
+
+
+#T-Storms{
+  transition: all .5s ease-in-out;
+  background-image: url(./Images/T-Storms.jpg);
+}
+
+#Showers{
+  transition: all .5s ease-in-out;
+  background-image: url(./Images/Showers.jpg);
+}
+
+#hail{
+  transition: all .5s ease-in-out;
+  background-image: url(./Images/hail.jpg);
+}
+
+#windy{
+  transition: all .5s ease-in-out;
+  background-image: url(./Images/windy.jpg);
+}
+
+#Haze{
+  transition: all .5s ease-in-out;
+  background-image: url(./Images/Haze.jpg);
+}
+
 #clear-day{
   transition: all .5s ease-in-out;
   background-image: url(./Images/clear-dar.jpg);
@@ -15,11 +42,15 @@
 #rainy-day{
   transition: all .5s ease-in-out;
   background-image: url(./Images/rainy-day.jpg);
+  background-color: rgb(157, 156, 156);
+  background-blend-mode: multiply;
 }
 
 #snowy-day{
   transition: all .5s ease-in-out;
-  background-image: url(./Images/snow-day-2.jpg);
+  background-image: url(./Images/snowy-day.jpg);
+  background-color: rgb(188, 188, 188);
+  background-blend-mode: multiply;
 }
 
 #sunny-night{
@@ -27,10 +58,10 @@
   background-image: url(./Images/sunny-night.jpg);
 }
 
-#snowy-night{
+/* #snowy-night{
   transition: all .5s ease-in-out;
   background-image: url(./Images/snowy-night.jpg);
-}
+} */
 
 #overcast-night{
   transition: all .5s ease-in-out;
@@ -61,6 +92,8 @@
 #day{
   transition: all .5s ease-in-out;
   background-image: url(./Images/day.jpg) !important;
+  background-color: rgb(188, 188, 188);
+  background-blend-mode: multiply;
 }
 
 #mist{
@@ -95,6 +128,8 @@
 #sunny{
   transition: all .5s ease-in-out;
   background-image: url(./Images/sunny.jpg) !important;
+  background-color: rgb(218, 217, 217);
+  background-blend-mode: multiply;
 }
 
 .initial {

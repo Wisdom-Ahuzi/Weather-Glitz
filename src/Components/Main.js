@@ -1,9 +1,52 @@
 import React, { useState, useEffect } from 'react'
+import myIcons1 from "../icons/1.svg"
+import myIcons2 from "../icons/2.svg"
+import myIcons3 from "../icons/3.svg"
+import myIcons4 from "../icons/4.svg"
+import myIcons5 from "../icons/5.svg"
+import myIcons6 from "../icons/6.svg"
+import myIcons7 from "../icons/7.svg"
+import myIcons8 from "../icons/8.svg"
+import myIcons11 from "../icons/11.svg"
+import myIcons12 from "../icons/12.svg"
+import myIcons13 from "../icons/13.svg"
+import myIcons14 from "../icons/14.svg"
+import myIcons15 from "../icons/15.svg"
+import myIcons16 from "../icons/16.svg"
+import myIcons17 from "../icons/17.svg"
+import myIcons18 from "../icons/18.svg"
+import myIcons19 from "../icons/19.svg"
+import myIcons20 from "../icons/20.svg"
+import myIcons21 from "../icons/21.svg"
+import myIcons22 from "../icons/22.svg"
+import myIcons23 from "../icons/23.svg"
+import myIcons24 from "../icons/24.svg"
+import myIcons25 from "../icons/25.svg"
+import myIcons26 from "../icons/26.svg"
+import myIcons27 from "../icons/27.svg"
+import myIcons30 from "../icons/30.svg"
+import myIcons31 from "../icons/31.svg"
+import myIcons32 from "../icons/32.svg"
+import myIcons33 from "../icons/33.svg"
+import myIcons34 from "../icons/34.svg"
+import myIcons35 from "../icons/35.svg"
+import myIcons36 from "../icons/36.svg"
+import myIcons37 from "../icons/37.svg"
+import myIcons38 from "../icons/38.svg"
+import myIcons39 from "../icons/39.svg"
+import myIcons40 from "../icons/40.svg"
+import myIcons41 from "../icons/41.svg"
+import myIcons42 from "../icons/42.svg"
+import myIcons43 from "../icons/43.svg"
+
+
+
+
 
 const Main = () => {
 
 
-
+    const keymain = 'XmCzInuL7mvtsZNlCErg3WOeMXjCos4Y';
 
     const [main, setMain] = useState({
         style: 'main',
@@ -11,138 +54,383 @@ const Main = () => {
     });
 
     const [basic, setBasic] = useState({
-        degree: 26,
-        location: 'Abeokuta',
-        country: 'Nigeria',
-        day: ' 8:08 - Tuesday, July 31, 2022.',
-        icon: '//cdn.weatherapi.com/weather/64x64/day/116.png',
-        text: 'sunny'
+        degree: '',
+        location: '',
+        country: '',
+        day: '',
+        icon: myIcons1,
+        text: '',
+        cloudy: ''
     })
+
+
+    const handleIcon = (iconWeather) => {
+        switch (iconWeather) {
+            case 1:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons1}
+                })
+                break;
+            case 2:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons2}
+                })
+                break;
+            case 3:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons3}
+                })
+                break;
+            case 4:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons4}
+                })
+                break;
+            case 5:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons5}
+                })
+                break;  
+                
+            case 6:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons6}
+                })
+                break;
+            case 6:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons6}
+                })
+                break;
+            case 7:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons7}
+                })
+                break;
+            case 8:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons8}
+                })
+                break;
+            case 11:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons11}
+                })
+                break;
+            case 12:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons12}
+                })
+                break;
+            case 13:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons13}
+                })
+                break;
+            case 14:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons14}
+                })
+                break;
+            case 15:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons15}
+                })
+                break;
+            case 16:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons16}
+                })
+                break;
+            case 17:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons17}
+                })
+                break;
+            case 18:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons18}
+                })
+                break;
+            case 19:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons19}
+                })
+                break;
+            case 20:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons20}
+                })
+                break;
+            case 21:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons21}
+                })
+                break;
+            case 22:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons22}
+                })
+                break;
+            case 23:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons23}
+                })
+                break;
+            case 24:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons24}
+                })
+                break;
+            case 25:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons25}
+                })
+                break;
+            case 26:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons26}
+                })
+                break;
+            case 27:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons27}
+                })
+                break;
+            case 30:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons30}
+                })
+                break;
+            case 31:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons31}
+                })
+                break;
+            case 32:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons32}
+                })
+                break;
+            case 33:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons33}
+                })
+                break;
+            case 34:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons34}
+                })
+                break;
+            case 35:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons35}
+                })
+                break;
+            case 36:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons36}
+                })
+                break;
+            case 37:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons37}
+                })
+                break;
+            case 38:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons38}
+                })
+                break;
+            case 39:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons39}
+                })
+                break;
+            case 40:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons40}
+                })
+                break;
+            case 41:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons41}
+                })
+                break;
+            case 42:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons42}
+                })
+                break;
+            case 43:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons43}
+                })
+                break;                    
+            default:
+                setBasic((basic) => {
+                    return{...basic, icon:myIcons12}
+                })
+            break;
+        }
+    }
+
 
     const [city, setCity] = useState('');
 
     const [suggestions, setSuggestions] = useState({
-        locationOne: 'Birmingham',
-        locationTwo: 'Manchester',
+        locationOne: 'Manchester',
+        locationTwo: 'Dubai',
         locationThree: 'New York',
-        locationFour: 'Abuja'
+        locationFour: 'Lagos'
     });
 
-    const [details, setDetails] = useState({
-        cloudy: 12,
-        humidity: 78,
-        wind: 5,
-        rain: 0
-    })
 
-    const handleSearch = (e) => {
-        e.preventDefault()
+    const handleFetchCityId =  async (city) =>{
+
+        const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+        const query = `?apikey=${keymain}&q=${city}`;
+
+        const response = await fetch(base + query);
+
+        const dataOne = await response.json();
+
+        return dataOne[0];
+    }
+
+    const handleFetchCityWeather = async (id) => {
+
         
-        const key = '5e6ef31d15b34067b7f10936223107';
+        const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+        const query = `${id}?apikey=${keymain}`;
 
-        const base = 'https://api.weatherapi.com/v1/current.json';
-        const query = `?key=${key}&q=${city}&aqi=no`;
+        const response = await fetch(base + query);
 
-        fetch(base + query)
-        .then(res => {
-            return res.json()
-        }).then(data => {
+        const dataTwo = await response.json();
+
+        return dataTwo[0];
+    }
+
+
+    const updateCity = async (city) => {
+
+        const cityId = await handleFetchCityId(city);
+        const cityWeather = await handleFetchCityWeather(cityId.Key);
+
+        return {
+            cityId:cityId,
+            cityWeather:cityWeather
+        }
+    }
+
+    const handleMainSearch = (e) => {
+
+        e.preventDefault();
+
+        updateCity(city)
+        .then((data) => {
+            
+
+            const basicTemps = data.cityWeather.Temperature;
+            const weatherText = data.cityWeather.WeatherText;
 
             setCity('');
 
-
+           
             localStorage.setItem('City', city)
 
 
-            const day = new Date(data.location.localtime).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"});
-            const some = data.location.localtime;
+            const day = new Date(data.cityWeather.LocalObservationDateTime).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"});
+            const some = data.cityWeather.LocalObservationDateTime;
             const timeValue = some.slice(11,16);
             const completeDay = `${timeValue} - ${day}`;
 
 
             setBasic((basic) => {
                 return{
-                    degree: data.current.temp_c,
-                    location: data.location.name,
-                    country: data.location.country,
-                    icon: data.current.condition.icon,
-                    text: data.current.condition.text,
-                    day: completeDay
-                }
-            });
-
-            setDetails((details) => {
-                return{
-                    cloudy: data.current.cloud,
-                    humidity:data.current.humidity,
-                    wind:data.current.wind_mph,
-                    rain:data.current.precip_mm
+                    degree: basicTemps.Metric.Value,
+                    location:data.cityId.AdministrativeArea.EnglishName,
+                    country:data.cityId.Country.EnglishName,
+                    icon: handleIcon(data.cityWeather.WeatherIcon),
+                    text: data.cityWeather.WeatherText,
+                    day: completeDay,
+                    cloudy:data.cityWeather.Temperature.Imperial.Value
                 }
             });
 
 
-
-            if (data.current.is_day === 1) {
-                if (data.current.condition.text.includes('unny')) {
-                    setMain(main => {
-                        return { ...main, background: 'sunny' }
-                    });
-                }else if (data.current.condition.text.includes('loud')) {
-                    setMain(main => {
-                        return { ...main, background: 'cloudy' }
-                    });
-                }else if (data.current.condition.text.includes('ain')) {
-                    setMain(main => {
-                        return { ...main, background: 'rainy-day' }
-                    });
-                }else if (data.current.condition.text.includes('vercast')) {
-                    setMain(main => {
-                        return { ...main, background: 'overcast' }
-                    });
-                }else if (data.current.condition.text.includes('Snow')) {
-                    setMain(main => {
-                        return { ...main, background: 'snowy-day' }
-                    });
-                }else if (data.current.condition.text.includes('torm')) {
-                    setMain(main => {
-                        return { ...main, background: 'stormy-2' }
-                    });
-                }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
-                    setMain(main => {
-                        return { ...main, background: 'mist' }
-                    });
-                }else{
-                    setMain(main => {
-                        return { ...main, background: 'clear-day' }
-                    });
+            if (data.cityWeather.IsDayTime) {
+                if (data.cityWeather.WeatherText.includes('loudy')) {
+                    setMain((main) => {
+                        return {...main, background:'cloudy'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('unny') || data.cityWeather.WeatherText.includes('Hot')) {
+                    setMain((main) => {
+                        return {...main, background:'sunny'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('ain') || data.cityWeather.WeatherText.includes('Cold')) {
+                    setMain((main) => {
+                        return {...main, background:'rainy-day'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('Dreary') || data.cityWeather.WeatherText.includes('vercast')) {
+                    setMain((main) => {
+                        return {...main, background:'overcast'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('fog')) {
+                    setMain((main) => {
+                        return {...main, background:'mist'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('Thunderstorm')) {
+                    setMain((main) => {
+                        return {...main, background:'T-Storms'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('Showers')) {
+                    setMain((main) => {
+                        return {...main, background:'Showers'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('Snow') || data.cityWeather.WeatherText.includes('Sleet') ) {
+                    setMain((main) => {
+                        return {...main, background:'snowy-day'}
+                    })
+                } else if (data.cityWeather.WeatherText.includes('Ice')) {
+                    setMain((main) => {
+                        return{...main, background:'hail' }
+                    })
+                } else if (data.cityWeather.WeatherText.includes('Windy')) {
+                    setMain((main) => {
+                        return{...main, background:'windy' }
+                    })
+                } else {
+                    setMain(()=> {
+                        return{...main, background:'day'}
+                    })
                 }
-                
             }else{
-                if (data.current.condition.text.includes('unny')) {
+              if (data.cityWeather.WeatherText.includes('Thunderstorm')) {
                     setMain(main => {
-                        return { ...main, background: 'sunny-night' }
+                        return { ...main, background: 'T-Storms' }
                     });
-                }else if (data.current.condition.text.includes('loud')) {
+                }else if (data.cityWeather.WeatherText.includes('loudy')) {
                     setMain(main => {
                         return { ...main, background: 'cloudy-night' }
                     });
-                }else if (data.current.condition.text.includes('ain')) {
+                }else if (data.cityWeather.WeatherText.includes('ain')) {
                     setMain(main => {
                         return { ...main, background: 'rainy' }
                     });
-                }else if (data.current.condition.text.includes('vercast')) {
+                }else if (data.cityWeather.WeatherText.includes('Hazy Moonlight')) {
                     setMain(main => {
-                        return { ...main, background: 'overcast-night' }
+                        return { ...main, background: 'Haze' }
                     });
-                }else if (data.current.condition.text.includes('Snow')) {
+                }else if (data.cityWeather.WeatherText.includes('Snow')) {
                     setMain(main => {
                         return { ...main, background: 'snowy-night' }
                     });
-                }else if (data.current.condition.text.includes('torm')) {
+                }else if (data.cityWeather.WeatherText.includes('torm')) {
                     setMain(main => {
                         return { ...main, background: 'stormy' }
                     });
-                }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
+                }else if (data.cityWeather.WeatherText.includes('Mist') || data.cityWeather.WeatherText.includes('Fog') ) {
                     setMain(main => {
                         return { ...main, background: 'mist-night' }
                     });
@@ -153,113 +441,114 @@ const Main = () => {
                 }
             }
 
-        }).catch(err => {
-            console.log(err, "Wahala");
         })
-
+        .catch(err => {
+            console.log(err, "Wahalaaaa");
+        });
     }
+
 
     const handleSuggestion = (location) => {
 
-        const key = '5e6ef31d15b34067b7f10936223107';
+        updateCity(location)
+        .then((data) => {
+            console.log(data.cityWeather.WeatherIcon);
 
-        const base = 'https://api.weatherapi.com/v1/current.json';
-        const query = `?key=${key}&q=${location}&aqi=no`;
-
-
-        fetch(base + query)
-        .then(res => {
-            return res.json()
-        }).then(data => {
+            const basicTemps = data.cityWeather.Temperature;
+            const weatherText = data.cityWeather.WeatherText;
 
 
-            const day = new Date(data.location.localtime).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"});
-            const some = data.location.localtime;
+            const day = new Date(data.cityWeather.LocalObservationDateTime).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"});
+            const some = data.cityWeather.LocalObservationDateTime;
             const timeValue = some.slice(11,16);
             const completeDay = `${timeValue} - ${day}`;
 
 
             setBasic((basic) => {
                 return{
-                    degree: data.current.temp_c,
-                    location: data.location.name,
-                    country: data.location.country,
-                    icon: data.current.condition.icon,
-                    text: data.current.condition.text,
-                    day: completeDay
+                    degree: basicTemps.Metric.Value,
+                    location:data.cityId.AdministrativeArea.EnglishName,
+                    country:data.cityId.Country.EnglishName,
+                    icon: handleIcon(data.cityWeather.WeatherIcon),
+                    text: data.cityWeather.WeatherText,
+                    day: completeDay,
+                    cloudy:data.cityWeather.Temperature.Imperial.Value
                 }
             });
 
-            setDetails((details) => {
-                return{
-                    cloudy: data.current.cloud,
-                    humidity:data.current.humidity,
-                    wind:data.current.wind_mph,
-                    rain:data.current.precip_mm
-                }
-            });
 
-            if (data.current.is_day === 1) {
-                if (data.current.condition.text.includes('unny')) {
-                    setMain(main => {
-                        return { ...main, background: 'sunny' }
-                    });
-                }else if (data.current.condition.text.includes('loud')) {
-                    setMain(main => {
-                        return { ...main, background: 'cloudy' }
-                    });
-                }else if (data.current.condition.text.includes('ain')) {
-                    setMain(main => {
-                        return { ...main, background: 'rainy-day' }
-                    });
-                }else if (data.current.condition.text.includes('vercast')) {
-                    setMain(main => {
-                        return { ...main, background: 'overcast' }
-                    });
-                }else if (data.current.condition.text.includes('Snow')) {
-                    setMain(main => {
-                        return { ...main, background: 'snowy-day' }
-                    });
-                }else if (data.current.condition.text.includes('torm')) {
-                    setMain(main => {
-                        return { ...main, background: 'stormy-2' }
-                    });
-                }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
-                    setMain(main => {
-                        return { ...main, background: 'mist' }
-                    });
-                }else{
-                    setMain(main => {
-                        return { ...main, background: 'clear-day' }
-                    });
+            if (data.cityWeather.IsDayTime) {
+                if (data.cityWeather.WeatherText.includes('loudy')) {
+                    setMain((main) => {
+                        return {...main, background:'cloudy'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('unny') || data.cityWeather.WeatherText.includes('Hot')) {
+                    setMain((main) => {
+                        return {...main, background:'sunny'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('ain') || data.cityWeather.WeatherText.includes('Cold')) {
+                    setMain((main) => {
+                        return {...main, background:'rainy-day'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('Dreary') || data.cityWeather.WeatherText.includes('vercast')) {
+                    setMain((main) => {
+                        return {...main, background:'overcast'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('fog')) {
+                    setMain((main) => {
+                        return {...main, background:'mist'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('Thunderstorm')) {
+                    setMain((main) => {
+                        return {...main, background:'T-Storms'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('Showers')) {
+                    setMain((main) => {
+                        return {...main, background:'Showers'}
+                    })
+                }else if (data.cityWeather.WeatherText.includes('Snow') || data.cityWeather.WeatherText.includes('Sleet') ) {
+                    setMain((main) => {
+                        return {...main, background:'snowy-day'}
+                    })
+                } else if (data.cityWeather.WeatherText.includes('Ice')) {
+                    setMain((main) => {
+                        return{...main, background:'hail' }
+                    })
+                } else if (data.cityWeather.WeatherText.includes('Windy')) {
+                    setMain((main) => {
+                        return{...main, background:'windy' }
+                    })
+                } else {
+                    setMain(()=> {
+                        return{...main, background:'day'}
+                    })
                 }
-                
-            }else{
-                if (data.current.condition.text.includes('unny')) {
+             }else{
+              if (data.cityWeather.WeatherText.includes('Thunderstorm')) {
                     setMain(main => {
-                        return { ...main, background: 'sunny-night' }
+                        return { ...main, background: 'T-Storms' }
                     });
-                }else if (data.current.condition.text.includes('loud')) {
+                }else if (data.cityWeather.WeatherText.includes('loudy')) {
                     setMain(main => {
                         return { ...main, background: 'cloudy-night' }
                     });
-                }else if (data.current.condition.text.includes('ain')) {
+                }else if (data.cityWeather.WeatherText.includes('ain')) {
                     setMain(main => {
                         return { ...main, background: 'rainy' }
                     });
-                }else if (data.current.condition.text.includes('vercast')) {
+                }else if (data.cityWeather.WeatherText.includes('Hazy Moonlight')) {
                     setMain(main => {
-                        return { ...main, background: 'overcast-night' }
+                        return { ...main, background: 'Haze' }
                     });
-                }else if (data.current.condition.text.includes('Snow')) {
+                }else if (data.cityWeather.WeatherText.includes('Snow')) {
                     setMain(main => {
                         return { ...main, background: 'snowy-night' }
                     });
-                }else if (data.current.condition.text.includes('torm')) {
+                }else if (data.cityWeather.WeatherText.includes('torm')) {
                     setMain(main => {
                         return { ...main, background: 'stormy' }
                     });
-                }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
+                }else if (data.cityWeather.WeatherText.includes('Mist') || data.cityWeather.WeatherText.includes('Fog') ) {
                     setMain(main => {
                         return { ...main, background: 'mist-night' }
                     });
@@ -270,124 +559,118 @@ const Main = () => {
                 }
             }
 
-        }).catch(err => {
-            console.log(err, "Wahala");
+        }).catch((err)=> {
+            console.log(err, "sugesstion wahala");
         })
-    }        
-
-
-    const fetchData = (city)  =>  {
-
-        const key = '5e6ef31d15b34067b7f10936223107';
-
-        const base = 'https://api.weatherapi.com/v1/current.json';
-        const query = `?key=${key}&q=${city}&aqi=no`;
-
-        return fetch(base + query);
     }
 
 
     useEffect(() => {
         const savedCity = localStorage.getItem("City");
 
-        if(savedCity) {
-            fetchData(savedCity).then((res) => {
-                return res.json()
-            }).then((data) => {
-                const day = new Date(data.location.localtime).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"});
-                const some = data.location.localtime;
+        setCity(city)
+
+        if (savedCity) {
+            updateCity(savedCity)
+            .then((data) => {
+    
+                const basicTemps = data.cityWeather.Temperature;
+                const weatherText = data.cityWeather.WeatherText;
+            
+                const day = new Date(data.cityWeather.LocalObservationDateTime).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"});
+                const some = data.cityWeather.LocalObservationDateTime;
                 const timeValue = some.slice(11,16);
                 const completeDay = `${timeValue} - ${day}`;
     
-                setSuggestions(suggestions =>{
-                    return{
-                        ...suggestions, locationOne:savedCity
-                    }
-                })
     
                 setBasic((basic) => {
                     return{
-                        degree: data.current.temp_c,
-                        location: data.location.name,
-                        country: data.location.country,
-                        icon: data.current.condition.icon,
-                        text: data.current.condition.text,
-                        day: completeDay
+                        degree: basicTemps.Metric.Value,
+                        location:data.cityId.AdministrativeArea.EnglishName,
+                        country:data.cityId.Country.EnglishName,
+                        icon: handleIcon(data.cityWeather.WeatherIcon),
+                        text: weatherText,
+                        day: completeDay,
+                        cloudy:data.cityWeather.Temperature.Imperial.Value
                     }
                 });
     
-                setDetails((details) => {
-                    return{
-                        cloudy: data.current.cloud,
-                        humidity:data.current.humidity,
-                        wind:data.current.wind_mph,
-                        rain:data.current.precip_mm
+
+
+
+
+                if (data.cityWeather.IsDayTime) {
+                    if (data.cityWeather.WeatherText.includes('loudy')) {
+                        setMain((main) => {
+                            return {...main, background:'cloudy'}
+                        })
+                    }else if (data.cityWeather.WeatherText.includes('unny') || data.cityWeather.WeatherText.includes('Hot')) {
+                        setMain((main) => {
+                            return {...main, background:'sunny'}
+                        })
+                    }else if (data.cityWeather.WeatherText.includes('ain') || data.cityWeather.WeatherText.includes('Cold')) {
+                        setMain((main) => {
+                            return {...main, background:'rainy-day'}
+                        })
+                    }else if (data.cityWeather.WeatherText.includes('Dreary') || data.cityWeather.WeatherText.includes('vercast')) {
+                        setMain((main) => {
+                            return {...main, background:'overcast'}
+                        })
+                    }else if (data.cityWeather.WeatherText.includes('fog')) {
+                        setMain((main) => {
+                            return {...main, background:'mist'}
+                        })
+                    }else if (data.cityWeather.WeatherText.includes('Thunderstorm')) {
+                        setMain((main) => {
+                            return {...main, background:'T-Storms'}
+                        })
+                    }else if (data.cityWeather.WeatherText.includes('Showers')) {
+                        setMain((main) => {
+                            return {...main, background:'Showers'}
+                        })
+                    }else if (data.cityWeather.WeatherText.includes('Snow') || data.cityWeather.WeatherText.includes('Sleet') ) {
+                        setMain((main) => {
+                            return {...main, background:'snowy-day'}
+                        })
+                    } else if (data.cityWeather.WeatherText.includes('Ice')) {
+                        setMain((main) => {
+                            return{...main, background:'hail' }
+                        })
+                    } else if (data.cityWeather.WeatherText.includes('Windy')) {
+                        setMain((main) => {
+                            return{...main, background:'windy' }
+                        })
+                    } else {
+                        setMain(()=> {
+                            return{...main, background:'day'}
+                        })
                     }
-                });
-    
-    
-    
-                if (data.current.is_day === 1) {
-                    if (data.current.condition.text.includes('unny')) {
-                        setMain(main => {
-                            return { ...main, background: 'sunny' }
-                        });
-                    }else if (data.current.condition.text.includes('loud')) {
-                        setMain(main => {
-                            return { ...main, background: 'cloudy' }
-                        });
-                    }else if (data.current.condition.text.includes('ain')) {
-                        setMain(main => {
-                            return { ...main, background: 'rainy-day' }
-                        });
-                    }else if (data.current.condition.text.includes('vercast')) {
-                        setMain(main => {
-                            return { ...main, background: 'overcast' }
-                        });
-                    }else if (data.current.condition.text.includes('Snow')) {
-                        setMain(main => {
-                            return { ...main, background: 'snowy-day' }
-                        });
-                    }else if (data.current.condition.text.includes('torm')) {
-                        setMain(main => {
-                            return { ...main, background: 'stormy-2' }
-                        });
-                    }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
-                        setMain(main => {
-                            return { ...main, background: 'mist' }
-                        });
-                    }else{
-                        setMain(main => {
-                            return { ...main, background: 'clear-day' }
-                        });
-                    }
-                    
                 }else{
-                    if (data.current.condition.text.includes('unny')) {
+                  if (data.cityWeather.WeatherText.includes('Thunderstorm')) {
                         setMain(main => {
-                            return { ...main, background: 'sunny-night' }
+                            return { ...main, background: 'T-Storms' }
                         });
-                    }else if (data.current.condition.text.includes('loud')) {
+                    }else if (data.cityWeather.WeatherText.includes('loudy')) {
                         setMain(main => {
                             return { ...main, background: 'cloudy-night' }
                         });
-                    }else if (data.current.condition.text.includes('ain')) {
+                    }else if (data.cityWeather.WeatherText.includes('ain')) {
                         setMain(main => {
                             return { ...main, background: 'rainy' }
                         });
-                    }else if (data.current.condition.text.includes('vercast')) {
+                    }else if (data.cityWeather.WeatherText.includes('Hazy Moonlight')) {
                         setMain(main => {
-                            return { ...main, background: 'overcast-night' }
+                            return { ...main, background: 'Haze' }
                         });
-                    }else if (data.current.condition.text.includes('Snow')) {
+                    }else if (data.cityWeather.WeatherText.includes('Snow')) {
                         setMain(main => {
                             return { ...main, background: 'snowy-night' }
                         });
-                    }else if (data.current.condition.text.includes('torm')) {
+                    }else if (data.cityWeather.WeatherText.includes('torm')) {
                         setMain(main => {
                             return { ...main, background: 'stormy' }
                         });
-                    }else if (data.current.condition.text.includes('Mist') || data.current.condition.text.includes('Fog') ) {
+                    }else if (data.cityWeather.WeatherText.includes('Mist') || data.cityWeather.WeatherText.includes('Fog') ) {
                         setMain(main => {
                             return { ...main, background: 'mist-night' }
                         });
@@ -398,11 +681,190 @@ const Main = () => {
                     }
                 }
     
-            }).catch((err) => {
-                console.log(err);
+            }).catch((err)=> {
+                console.log(err, "sugesstion wahala");
             })
-        }
-    }, [])
+        }else{
+
+
+            const findMyState = () => {
+
+
+  
+                const success = (position) => {
+                  const latitude = position.coords.latitude;
+                  const longitude = position.coords.longitude;  
+                  const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage*en`;
+              
+              
+                  
+
+                  fetch(geoApiUrl)
+                  .then(res => res.json())
+                  .then(data => {
+
+                    fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${keymain}&q=${data.city}`)
+                    .then((res) => {
+                        return res.json();
+                    }).then((data) => {
+
+                        console.log(data[0].AdministrativeArea.EnglishName,data[0].Country.LocalizedName);
+
+                        setBasic((basic) => {
+                            return {
+                                ...basic, 
+                                location:data[0].AdministrativeArea.EnglishName,
+                                country:data[0].Country.LocalizedName,
+                            }
+                        })
+
+                        fetch(`http://dataservice.accuweather.com/currentconditions/v1/${data[0].Key}?apikey=${keymain}`)
+                        .then((res) => {
+                            return res.json();
+
+                        }).then((data) => {
+                            const basicTemps = data[0].Temperature;
+                            const weatherText = data[0].WeatherText;
+                        
+                            const day = new Date(data[0].LocalObservationDateTime).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"});
+                            const some = data[0].LocalObservationDateTime;
+                            const timeValue = some.slice(11,16);
+                            const completeDay = `${timeValue} - ${day}`;
+                
+                
+                            setBasic((basic) => {
+                                return{
+                                    location: 'Your Location',
+                                    degree: basicTemps.Metric.Value,
+                                    icon: handleIcon(data[0].WeatherIcon),
+                                    text: weatherText,
+                                    day: completeDay,
+                                    cloudy:data[0].Temperature.Imperial.Value
+                                }
+                            });
+                
+            
+            
+            
+            
+                            if (data[0].IsDayTime) {
+                                if (data[0].WeatherText.includes('loudy')) {
+                                    setMain((main) => {
+                                        return {...main, background:'cloudy'}
+                                    })
+                                }else if (data[0].WeatherText.includes('unny') || data[0].WeatherText.includes('Hot')) {
+                                    setMain((main) => {
+                                        return {...main, background:'sunny'}
+                                    })
+                                }else if (data[0].WeatherText.includes('ain') || data[0].WeatherText.includes('Cold')) {
+                                    setMain((main) => {
+                                        return {...main, background:'rainy-day'}
+                                    })
+                                }else if (data[0].WeatherText.includes('Dreary') || data[0].WeatherText.includes('vercast')) {
+                                    setMain((main) => {
+                                        return {...main, background:'overcast'}
+                                    })
+                                }else if (data[0].WeatherText.includes('fog')) {
+                                    setMain((main) => {
+                                        return {...main, background:'mist'}
+                                    })
+                                }else if (data[0].WeatherText.includes('Thunderstorm')) {
+                                    setMain((main) => {
+                                        return {...main, background:'T-Storms'}
+                                    })
+                                }else if (data[0].WeatherText.includes('Showers')) {
+                                    setMain((main) => {
+                                        return {...main, background:'Showers'}
+                                    })
+                                }else if (data[0].WeatherText.includes('Snow') || data[0].WeatherText.includes('Sleet') ) {
+                                    setMain((main) => {
+                                        return {...main, background:'snowy-day'}
+                                    })
+                                } else if (data[0].WeatherText.includes('Ice')) {
+                                    setMain((main) => {
+                                        return{...main, background:'hail' }
+                                    })
+                                } else if (data[0].WeatherText.includes('Windy')) {
+                                    setMain((main) => {
+                                        return{...main, background:'windy' }
+                                    })
+                                } else {
+                                    setMain(()=> {
+                                        return{...main, background:'day'}
+                                    })
+                                }
+                            }else{
+                              if (data[0].WeatherText.includes('Thunderstorm')) {
+                                    setMain(main => {
+                                        return { ...main, background: 'T-Storms' }
+                                    });
+                                }else if (data[0].WeatherText.includes('loudy')) {
+                                    setMain(main => {
+                                        return { ...main, background: 'cloudy-night' }
+                                    });
+                                }else if (data[0].WeatherText.includes('ain')) {
+                                    setMain(main => {
+                                        return { ...main, background: 'rainy' }
+                                    });
+                                }else if (data[0].WeatherText.includes('Hazy Moonlight')) {
+                                    setMain(main => {
+                                        return { ...main, background: 'Haze' }
+                                    });
+                                }else if (data[0].WeatherText.includes('Snow')) {
+                                    setMain(main => {
+                                        return { ...main, background: 'snowy-night' }
+                                    });
+                                }else if (data[0].WeatherText.includes('torm')) {
+                                    setMain(main => {
+                                        return { ...main, background: 'stormy' }
+                                    });
+                                }else if (data[0].WeatherText.includes('Mist') || data[0].WeatherText.includes('Fog') ) {
+                                    setMain(main => {
+                                        return { ...main, background: 'mist-night' }
+                                    });
+                                }else{
+                                    setMain(main => {
+                                        return { ...main, background: 'night' }
+                                    });
+                                }
+                            }
+                            
+                        })
+
+
+
+                        
+                        .catch(err => {
+                            console.log(err, "City weather error");
+                        })
+
+                    }).catch(err => {
+                        console.log(err, "City id error");
+                    })
+
+                  })
+                  .catch(err => {
+                    console.log(err, "First error");
+                  });
+              
+                }
+              
+                const error = (err) => {
+                  console.log(err, "second error");
+                }
+              
+                
+                navigator.geolocation.getCurrentPosition(success, error);
+
+
+            }
+
+            findMyState();
+
+
+
+        }         
+    }, []);
 
     return (
         <div className='initial'>
@@ -420,7 +882,7 @@ const Main = () => {
                             </div>
                             <div className="condition">
                                 <div className="icon">
-                                    <img src={basic.icon} alt="Weather-Icon" />
+                                    <img src={basic.icon} height="87" width="100" alt='Weather Icon' />
                                 </div>
                                 <p>{basic.text}</p>
                             </div>
@@ -431,10 +893,10 @@ const Main = () => {
                 <div className="second">
                     <div className="inner-second">
                         <div className="one">
-                            <form onSubmit={handleSearch}>
+                            <form onSubmit={handleMainSearch}>
                                 <input type="text" value={city} placeholder='Another Location' onChange={(e) => { setCity(e.target.value) }} />
                             </form>
-                            <div className="search" onClick={handleSearch}>
+                            <div className="search" onClick={handleMainSearch}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                             </div>
                         </div>
@@ -454,20 +916,12 @@ const Main = () => {
 
                             <div className="inner-three">
                                 <div className="inner-three-one">
-                                    <span>Cloudy</span>
-                                    <span>{details.cloudy}%</span>
+                                    <span>Temperature(°F)</span>
+                                    <span>{basic.cloudy} °F</span>
                                 </div>
-                                <div className="inner-three-two">
-                                    <span>Humidity</span>
-                                    <span>{details.humidity}%</span>
-                                </div>
-                                <div className="inner-three-three">
-                                    <span>Wind</span>
-                                    <span>{details.wind}m/h</span>
-                                </div>
-                                <div className="inner-three-four">
-                                    <span>Rain</span>
-                                    <span>{details.rain}mm</span>
+                                 <div className="inner-three-two">
+                                    <span>Temperature(°c)</span>
+                                    <span> {basic.degree}°c</span>
                                 </div>
                             </div>
                         </div>
