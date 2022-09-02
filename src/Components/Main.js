@@ -46,7 +46,7 @@ import myIcons43 from "../icons/43.svg"
 const Main = () => {
 
 
-    const keymain = 'XmCzInuL7mvtsZNlCErg3WOeMXjCos4Y';
+    const keymain = 'Dpwol6HM9xd070KVCF4MWBLx3yl3EmdQ';
 
     const [main, setMain] = useState({
         style: 'main',
@@ -452,7 +452,7 @@ const Main = () => {
 
         updateCity(location)
         .then((data) => {
-            console.log(data.cityWeather.WeatherIcon);
+            console.log(data);
 
             const basicTemps = data.cityWeather.Temperature;
             const weatherText = data.cityWeather.WeatherText;
@@ -686,6 +686,45 @@ const Main = () => {
             })
         }else{
 
+            
+            const findLocation = () => {
+  
+                const success = (position) => {
+                  const latitude = position.coords.latitude;
+                  const longitude = position.coords.longitude;  
+                  const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage*en`;
+              
+              
+                  fetch(geoApiUrl)
+                  .then(res => res.json())
+                  .then(data => {
+                    console.log(data.city, data.countryName);
+
+                    setBasic((basic) => {
+                        return {
+                            ...basic, 
+                            location:data.city,
+                            country:data.countryName,
+                        }
+                    })  
+                  })
+                  .catch(err => {
+                    console.log(err);
+                  });
+              
+                }
+              
+                const error = (err) => {
+                  console.log(err, "Find Location Error");
+                }
+              
+                
+                navigator.geolocation.getCurrentPosition(success, error);
+            }
+
+            findLocation();
+
+
 
             const findMyState = () => {
 
@@ -695,20 +734,28 @@ const Main = () => {
                   const latitude = position.coords.latitude;
                   const longitude = position.coords.longitude;  
                   const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage*en`;
-              
-              
-                  
+                                
 
                   fetch(geoApiUrl)
                   .then(res => res.json())
                   .then(data => {
+
+                    
+
+                    setBasic((basic) => {
+                        return {
+                            ...basic, 
+                            location:data.city,
+                            country:data.countryName,
+                        }
+                    })                
 
                     fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${keymain}&q=${data.city}`)
                     .then((res) => {
                         return res.json();
                     }).then((data) => {
 
-                        console.log(data[0].AdministrativeArea.EnglishName,data[0].Country.LocalizedName);
+                        
 
                         setBasic((basic) => {
                             return {
@@ -734,7 +781,7 @@ const Main = () => {
                 
                             setBasic((basic) => {
                                 return{
-                                    location: 'Your Location',
+                                    ...basic,
                                     degree: basicTemps.Metric.Value,
                                     icon: handleIcon(data[0].WeatherIcon),
                                     text: weatherText,
@@ -860,7 +907,6 @@ const Main = () => {
             }
 
             findMyState();
-
 
 
         }         
