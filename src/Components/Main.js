@@ -65,6 +65,7 @@ const Main = () => {
 
 
     const handleIcon = (iconWeather) => {
+        
         switch (iconWeather) {
             case 1:
                 setBasic((basic) => {
