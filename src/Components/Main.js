@@ -46,7 +46,7 @@ import myIcons43 from "../icons/43.svg"
 const Main = () => {
 
 
-    const keymain = 'Dpwol6HM9xd070KVCF4MWBLx3yl3EmdQ';
+    const keymain = 'qYsPYmL23nNPpJrnrEIvhr51gfB1DLLU';
 
     const [main, setMain] = useState({
         style: 'main',
