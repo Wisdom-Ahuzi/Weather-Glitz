@@ -46,7 +46,7 @@ import myIcons43 from "../icons/43.svg"
 const Main = () => {
 
 
-    const keymain = 'qYsPYmL23nNPpJrnrEIvhr51gfB1DLLU';
+    const keymain = '66yQZ4kT3qUVWYryyzgJIbtCyvYNHjau';
 
     const [main, setMain] = useState({
         style: 'main',
@@ -67,7 +67,6 @@ const Main = () => {
     const handleIcon = (iconWeather) => {
         switch (iconWeather) {
             case 1:
-                
                 setBasic((basic) => {
                     return{...basic, icon:myIcons1}
                 })
